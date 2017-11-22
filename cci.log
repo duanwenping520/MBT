@@ -1,0 +1,725 @@
+
+2017-11-22 10:23:41.264 [WebContainer : 5] INFO  com.synesoft.common.listener.SyneSessionListener - CCI session created,session id is:jWkD-GYY3Zx2PESADRHlLpk
+2017-11-22 10:23:41.296 [WebContainer : 5] INFO  com.synesoft.common.controller.SessionDestroyController - CCI sessionDestroy controller begin...
+2017-11-22 10:23:41.298 [WebContainer : 5] INFO  com.synesoft.common.listener.SyneSessionListener - CCI session destroy begin......
+2017-11-22 10:23:41.301 [WebContainer : 5] INFO  com.synesoft.common.listener.SyneSessionListener - CCI session destroy success......
+2017-11-22 10:23:41.302 [WebContainer : 5] INFO  com.synesoft.common.controller.SessionDestroyController - CCI sessionDestroy controller end.
+2017-11-22 10:23:55.311 [WebContainer : 3] INFO  com.synesoft.common.listener.SyneSessionListener - CCI session created,session id is:NE1EfkzNl-159qFccHP7wJ1
+2017-11-22 10:23:55.323 [WebContainer : 3] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /ump/homePage
+2017-11-22 10:23:55.539 [WebContainer : 3] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:23:55.540 [WebContainer : 3] DEBUG java.sql.Connection - {conn-100018} Connection
+2017-11-22 10:23:55.541 [WebContainer : 3] DEBUG java.sql.Connection - {conn-100018} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:23:55.545 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100019} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:23:55.546 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100019} Parameters: [tm01]
+2017-11-22 10:23:55.555 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100019} Types: [java.lang.String]
+2017-11-22 10:23:55.563 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100020} ResultSet
+2017-11-22 10:23:55.566 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100020} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:23:55.567 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100020} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102218, 20171122102348, 133.10.46.40, tm01, 20171122102341, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:23:55.568 [WebContainer : 3] DEBUG java.sql.Connection - {conn-100021} Connection
+2017-11-22 10:23:55.569 [WebContainer : 3] DEBUG java.sql.Connection - {conn-100021} Preparing Statement:    select ORGID, ORGNAME, SUPRORGID, SUPRORGNAME, BANKID,   BANKNAME, NODECODE,   MAXFAILCNT,    CREATER,   CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, OPTSTATUS,   RSV1, RSV2,   RSV3, RSV4,   RSV5   from ump.SYS_ORG_INF   where trim(ORGID) = ?  
+2017-11-22 10:23:55.576 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100022} Executing Statement:    select ORGID, ORGNAME, SUPRORGID, SUPRORGNAME, BANKID,   BANKNAME, NODECODE,   MAXFAILCNT,    CREATER,   CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, OPTSTATUS,   RSV1, RSV2,   RSV3, RSV4,   RSV5   from ump.SYS_ORG_INF   where trim(ORGID) = ?  
+2017-11-22 10:23:55.583 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100022} Parameters: [000]
+2017-11-22 10:23:55.584 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100022} Types: [java.lang.String]
+2017-11-22 10:23:55.587 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100023} ResultSet
+2017-11-22 10:23:55.593 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100023} Header: [ORGID, ORGNAME, SUPRORGID, SUPRORGNAME, BANKID, BANKNAME, NODECODE, MAXFAILCNT, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, OPTSTATUS, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:23:55.594 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100023} Result: [000, 汇丰中国, null,  , 671290000017, 测试银行总行, 671290000017, null, dyj, 20130815145936, wy, 20131126102610, admin, 20130928120808, 02, null, null, null, null, null]
+2017-11-22 10:23:55.595 [WebContainer : 3] DEBUG java.sql.Connection - {conn-100024} Connection
+2017-11-22 10:23:55.596 [WebContainer : 3] DEBUG java.sql.Connection - {conn-100024} Preparing Statement:      select * from ump.SYS_USER_ORG_INF     where                 trim(USERID) = ?                    
+2017-11-22 10:23:55.606 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100025} Executing Statement:      select * from ump.SYS_USER_ORG_INF     where                 trim(USERID) = ?                    
+2017-11-22 10:23:55.606 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100025} Parameters: [tm01]
+2017-11-22 10:23:55.607 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100025} Types: [java.lang.String]
+2017-11-22 10:23:55.611 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} ResultSet
+2017-11-22 10:23:55.618 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Header: [ORGID, USERID, ORGNAME, CREATER, CREATETIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:23:55.618 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [000, tm01, 汇丰中国, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.619 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [OPS_151, tm01, 上海FTU营运部1, admindemo, 20140826111249, admindemo, 20140826111344, null, null, null, null, null]
+2017-11-22 10:23:55.620 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [OPS_771, tm01, 上海FTU营运部2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.623 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GTRF_001, tm01, 上海FTU贸易部3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.629 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [OPS_001, tm01, 上海FTU营运部5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.633 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [FIN_001, tm01, 上海FTU财务部3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.634 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GM_001, tm01, 上海FTU_GM3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.637 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [RBWM_001, tm01, 上海FUT_零售业务3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.637 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [OPS_191, tm01, 上海FTU营运部3, admindemo, 20140826111249, admindemo, 20140826111344, null, null, null, null, null]
+2017-11-22 10:23:55.641 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [OPS_811, tm01, 上海FTU营运部4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.649 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [CDT_001, tm01, 上海FTU信贷部5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.650 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [FIN_191, tm01, 上海FTU财务部4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.651 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [FIN_811, tm01, 上海FTU财务部5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.655 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GM_191, tm01, 上海FTU_GM4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.658 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GM_811, tm01, 上海FTU_GM5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.659 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GTRF_191, tm01, 上海FTU贸易部4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.662 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [FIN_151, tm01, 上海FTU财务部1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.665 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [FIN_771, tm01, 上海FTU财务部2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.666 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GM_151, tm01, 上海FTU_GM1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.671 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [RBWM_151, tm01, 上海FTU_零售业务1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.673 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [CDT_151, tm01, 上海FTU信贷部1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.674 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [CDT_771, tm01, 上海FTU信贷部2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.676 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [CDT_191, tm01, 上海FTU信贷部3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.676 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [CDT_811, tm01, 上海FTU信贷部4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.677 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GTRF_151, tm01, 上海FTU贸易部1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.684 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GTRF_771, tm01, 上海FTU贸易部2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.685 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GM_771, tm01, 上海FTU_GM2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.686 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [RBWM_771, tm01, 上海FUT_零售业务2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.689 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GTRF_811, tm01, 上海FTU贸易部5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.694 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [RBWM_191, tm01, 上海FTU_零售业务4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.701 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [RBWM_811, tm01, 上海FUT_零售业务5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.702 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [001, tm01, 上海分行, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:23:55.706 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GMF_151, tm01, 上海FTU_GMF1, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:23:55.709 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GMF_001, tm01, 上海FTU_GMF5, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:23:55.710 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GMF_771, tm01, 上海FTU_GMF2, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:23:55.713 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GMF_811, tm01, 上海FTU_GMF4, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:23:55.713 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [hsbc_01, tm01, hsbc_01, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:23:55.714 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [hsbc, tm01, hsbc, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:23:55.723 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100026} Result: [GMF_191, tm01, 上海FTU_GMF3, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:23:55.725 [WebContainer : 3] DEBUG java.sql.Connection - {conn-100027} Connection
+2017-11-22 10:23:55.729 [WebContainer : 3] DEBUG java.sql.Connection - {conn-100027} Preparing Statement:      select ROLEID from ump.SYS_USER_ROLE     where                 trim(USERID) = ?            
+2017-11-22 10:23:55.733 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100028} Executing Statement:      select ROLEID from ump.SYS_USER_ROLE     where                 trim(USERID) = ?            
+2017-11-22 10:23:55.734 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100028} Parameters: [tm01]
+2017-11-22 10:23:55.735 [WebContainer : 3] DEBUG java.sql.PreparedStatement - {pstm-100028} Types: [java.lang.String]
+2017-11-22 10:23:55.742 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100029} ResultSet
+2017-11-22 10:23:55.743 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100029} Header: [ROLEID]
+2017-11-22 10:23:55.744 [WebContainer : 3] DEBUG java.sql.ResultSet - {rset-100029} Result: [admin]
+2017-11-22 10:23:55.745 [WebContainer : 3] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI the roles are: [admin]
+2017-11-22 10:23:55.752 [WebContainer : 3] INFO  com.synesoft.cci.business.homepage.CciHomePageController - ump-homePage-start
+2017-11-22 10:24:12.148 [PoolingTask-Runner] INFO  cn.com.synesoft.jsynframe.batch - PollingServerBase.PoolingTask.run() start.....
+2017-11-22 10:24:13.008 [BatchMonitor-1] INFO  cn.com.synesoft.jsynframe.batch - BatchMonitor.pooling().runNormal()->heartbeat() refresh bat_machine end.
+2017-11-22 10:24:13.019 [PoolingTask-Runner] INFO  cn.com.synesoft.jsynframe.batch - PollingServerBase.PoolingTask.run() end.
+2017-11-22 10:25:02.129 [WebContainer : 3] INFO  com.synesoft.common.listener.SyneSessionListener - CCI session created,session id is:CGj_TEn5Pdskr90sOgmWbr6
+2017-11-22 10:25:02.135 [WebContainer : 3] INFO  com.synesoft.common.controller.SessionDestroyController - CCI sessionDestroy controller begin...
+2017-11-22 10:25:02.136 [WebContainer : 3] INFO  com.synesoft.common.listener.SyneSessionListener - CCI session destroy begin......
+2017-11-22 10:25:02.136 [WebContainer : 3] INFO  com.synesoft.common.listener.SyneSessionListener - CCI session destroy success......
+2017-11-22 10:25:02.137 [WebContainer : 3] INFO  com.synesoft.common.controller.SessionDestroyController - CCI sessionDestroy controller end.
+2017-11-22 10:25:13.018 [PoolingTask-Runner] INFO  cn.com.synesoft.jsynframe.batch - PollingServerBase.PoolingTask.run() start.....
+2017-11-22 10:25:14.580 [BatchMonitor-1] INFO  cn.com.synesoft.jsynframe.batch - BatchMonitor.pooling().runNormal()->heartbeat() refresh bat_machine end.
+2017-11-22 10:25:14.595 [PoolingTask-Runner] INFO  cn.com.synesoft.jsynframe.batch - PollingServerBase.PoolingTask.run() end.
+2017-11-22 10:25:18.998 [WebContainer : 4] INFO  com.synesoft.common.listener.SyneSessionListener - CCI session created,session id is:A98JHP3TYFPS4IonMIzqywO
+2017-11-22 10:25:19.008 [WebContainer : 4] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /ump/homePage
+2017-11-22 10:25:19.406 [WebContainer : 4] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:25:19.408 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100030} Connection
+2017-11-22 10:25:19.409 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100030} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:25:19.416 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100031} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:25:19.424 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100031} Parameters: [tm01]
+2017-11-22 10:25:19.425 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100031} Types: [java.lang.String]
+2017-11-22 10:25:19.435 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100032} ResultSet
+2017-11-22 10:25:19.440 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100032} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:25:19.446 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100032} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:25:19.452 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100033} Connection
+2017-11-22 10:25:19.458 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100033} Preparing Statement:    select ORGID, ORGNAME, SUPRORGID, SUPRORGNAME, BANKID,   BANKNAME, NODECODE,   MAXFAILCNT,    CREATER,   CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, OPTSTATUS,   RSV1, RSV2,   RSV3, RSV4,   RSV5   from ump.SYS_ORG_INF   where trim(ORGID) = ?  
+2017-11-22 10:25:19.470 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100034} Executing Statement:    select ORGID, ORGNAME, SUPRORGID, SUPRORGNAME, BANKID,   BANKNAME, NODECODE,   MAXFAILCNT,    CREATER,   CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, OPTSTATUS,   RSV1, RSV2,   RSV3, RSV4,   RSV5   from ump.SYS_ORG_INF   where trim(ORGID) = ?  
+2017-11-22 10:25:19.472 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100034} Parameters: [000]
+2017-11-22 10:25:19.480 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100034} Types: [java.lang.String]
+2017-11-22 10:25:19.490 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100035} ResultSet
+2017-11-22 10:25:19.496 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100035} Header: [ORGID, ORGNAME, SUPRORGID, SUPRORGNAME, BANKID, BANKNAME, NODECODE, MAXFAILCNT, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, OPTSTATUS, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:25:19.500 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100035} Result: [000, 汇丰中国, null,  , 671290000017, 测试银行总行, 671290000017, null, dyj, 20130815145936, wy, 20131126102610, admin, 20130928120808, 02, null, null, null, null, null]
+2017-11-22 10:25:19.508 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100036} Connection
+2017-11-22 10:25:19.514 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100036} Preparing Statement:      select * from ump.SYS_USER_ORG_INF     where                 trim(USERID) = ?                    
+2017-11-22 10:25:19.520 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100037} Executing Statement:      select * from ump.SYS_USER_ORG_INF     where                 trim(USERID) = ?                    
+2017-11-22 10:25:19.524 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100037} Parameters: [tm01]
+2017-11-22 10:25:19.528 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100037} Types: [java.lang.String]
+2017-11-22 10:25:19.540 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} ResultSet
+2017-11-22 10:25:19.542 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Header: [ORGID, USERID, ORGNAME, CREATER, CREATETIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:25:19.545 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [000, tm01, 汇丰中国, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.553 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [OPS_151, tm01, 上海FTU营运部1, admindemo, 20140826111249, admindemo, 20140826111344, null, null, null, null, null]
+2017-11-22 10:25:19.562 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [OPS_771, tm01, 上海FTU营运部2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.569 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GTRF_001, tm01, 上海FTU贸易部3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.576 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [OPS_001, tm01, 上海FTU营运部5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.580 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [FIN_001, tm01, 上海FTU财务部3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.583 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GM_001, tm01, 上海FTU_GM3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.590 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [RBWM_001, tm01, 上海FUT_零售业务3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.591 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [OPS_191, tm01, 上海FTU营运部3, admindemo, 20140826111249, admindemo, 20140826111344, null, null, null, null, null]
+2017-11-22 10:25:19.597 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [OPS_811, tm01, 上海FTU营运部4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.604 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [CDT_001, tm01, 上海FTU信贷部5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.609 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [FIN_191, tm01, 上海FTU财务部4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.616 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [FIN_811, tm01, 上海FTU财务部5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.622 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GM_191, tm01, 上海FTU_GM4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.626 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GM_811, tm01, 上海FTU_GM5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.634 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GTRF_191, tm01, 上海FTU贸易部4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.639 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [FIN_151, tm01, 上海FTU财务部1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.645 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [FIN_771, tm01, 上海FTU财务部2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.655 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GM_151, tm01, 上海FTU_GM1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.660 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [RBWM_151, tm01, 上海FTU_零售业务1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.664 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [CDT_151, tm01, 上海FTU信贷部1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.668 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [CDT_771, tm01, 上海FTU信贷部2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.674 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [CDT_191, tm01, 上海FTU信贷部3, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.682 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [CDT_811, tm01, 上海FTU信贷部4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.689 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GTRF_151, tm01, 上海FTU贸易部1, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.690 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GTRF_771, tm01, 上海FTU贸易部2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.698 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GM_771, tm01, 上海FTU_GM2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.701 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [RBWM_771, tm01, 上海FUT_零售业务2, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.705 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GTRF_811, tm01, 上海FTU贸易部5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.713 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [RBWM_191, tm01, 上海FTU_零售业务4, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.718 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [RBWM_811, tm01, 上海FUT_零售业务5, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.724 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [001, tm01, 上海分行, zhadmin, 20140617100407, tm002, 20140617100456, null, null, null, null, null]
+2017-11-22 10:25:19.733 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GMF_151, tm01, 上海FTU_GMF1, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:25:19.736 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GMF_001, tm01, 上海FTU_GMF5, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:25:19.744 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GMF_771, tm01, 上海FTU_GMF2, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:25:19.752 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GMF_811, tm01, 上海FTU_GMF4, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:25:19.759 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [hsbc_01, tm01, hsbc_01, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:25:19.760 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [hsbc, tm01, hsbc, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:25:19.761 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100038} Result: [GMF_191, tm01, 上海FTU_GMF3, tm01, 20170906181057, tm02, 20170906181208, null, null, null, null, null]
+2017-11-22 10:25:19.771 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100039} Connection
+2017-11-22 10:25:19.778 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100039} Preparing Statement:      select ROLEID from ump.SYS_USER_ROLE     where                 trim(USERID) = ?            
+2017-11-22 10:25:19.786 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100040} Executing Statement:      select ROLEID from ump.SYS_USER_ROLE     where                 trim(USERID) = ?            
+2017-11-22 10:25:19.788 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100040} Parameters: [tm01]
+2017-11-22 10:25:19.792 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100040} Types: [java.lang.String]
+2017-11-22 10:25:19.797 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100041} ResultSet
+2017-11-22 10:25:19.802 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100041} Header: [ROLEID]
+2017-11-22 10:25:19.806 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100041} Result: [admin]
+2017-11-22 10:25:19.813 [WebContainer : 4] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI the roles are: [admin]
+2017-11-22 10:25:19.817 [WebContainer : 4] INFO  com.synesoft.cci.business.homepage.CciHomePageController - ump-homePage-start
+2017-11-22 10:26:05.120 [WebContainer : 0] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /ump/homePage
+2017-11-22 10:26:05.362 [WebContainer : 0] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:26:05.363 [WebContainer : 0] DEBUG java.sql.Connection - {conn-100042} Connection
+2017-11-22 10:26:05.364 [WebContainer : 0] DEBUG java.sql.Connection - {conn-100042} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:26:05.384 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100043} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:26:05.389 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100043} Parameters: [tm01]
+2017-11-22 10:26:05.396 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100043} Types: [java.lang.String]
+2017-11-22 10:26:05.400 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100044} ResultSet
+2017-11-22 10:26:05.404 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100044} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:26:05.407 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100044} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:26:05.420 [WebContainer : 0] INFO  com.synesoft.cci.business.homepage.CciHomePageController - ump-homePage-start
+2017-11-22 10:26:08.779 [WebContainer : 0] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciAssetsLiability2007/mng
+2017-11-22 10:26:09.023 [WebContainer : 0] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:26:09.024 [WebContainer : 0] DEBUG java.sql.Connection - {conn-100045} Connection
+2017-11-22 10:26:09.026 [WebContainer : 0] DEBUG java.sql.Connection - {conn-100045} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:26:09.036 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100046} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:26:09.041 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100046} Parameters: [tm01]
+2017-11-22 10:26:09.045 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100046} Types: [java.lang.String]
+2017-11-22 10:26:09.051 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100047} ResultSet
+2017-11-22 10:26:09.057 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100047} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:26:09.060 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100047} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:26:09.133 [WebContainer : 0] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciAssetsLiability2007/ini
+2017-11-22 10:26:09.309 [WebContainer : 0] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:26:09.312 [WebContainer : 0] DEBUG java.sql.Connection - {conn-100048} Connection
+2017-11-22 10:26:09.314 [WebContainer : 0] DEBUG java.sql.Connection - {conn-100048} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:26:09.324 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100049} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:26:09.329 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100049} Parameters: [tm01]
+2017-11-22 10:26:09.336 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100049} Types: [java.lang.String]
+2017-11-22 10:26:09.344 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100050} ResultSet
+2017-11-22 10:26:09.351 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100050} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:26:09.355 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100050} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:26:09.364 [WebContainer : 0] INFO  com.synesoft.cci.business.controller.CciBusiController - ini-start
+2017-11-22 10:26:09.483 [WebContainer : 0] INFO  com.synesoft.cci.business.controller.CciBusiController - ini-end
+2017-11-22 10:26:09.569 [WebContainer : 0] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciAssetsLiability2007/search
+2017-11-22 10:26:09.752 [WebContainer : 0] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:26:09.755 [WebContainer : 0] DEBUG java.sql.Connection - {conn-100051} Connection
+2017-11-22 10:26:09.763 [WebContainer : 0] DEBUG java.sql.Connection - {conn-100051} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:26:14.189 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100052} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:26:14.195 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100052} Parameters: [tm01]
+2017-11-22 10:26:14.200 [WebContainer : 0] DEBUG java.sql.PreparedStatement - {pstm-100052} Types: [java.lang.String]
+2017-11-22 10:26:14.209 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100053} ResultSet
+2017-11-22 10:26:14.215 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100053} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:26:14.220 [WebContainer : 0] DEBUG java.sql.ResultSet - {rset-100053} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:26:14.931 [PoolingTask-Runner] INFO  cn.com.synesoft.jsynframe.batch - PollingServerBase.PoolingTask.run() start.....
+2017-11-22 10:26:15.350 [WebContainer : 0] INFO  com.synesoft.cci.business.controller.CciBusiController - search-start
+2017-11-22 10:26:15.489 [BatchMonitor-1] INFO  cn.com.synesoft.jsynframe.batch - BatchMonitor.pooling().runNormal()->heartbeat() refresh bat_machine end.
+2017-11-22 10:26:15.521 [PoolingTask-Runner] INFO  cn.com.synesoft.jsynframe.batch - PollingServerBase.PoolingTask.run() end.
+2017-11-22 10:26:15.676 [WebContainer : 3] ERROR org.springframework.web.servlet.DispatcherServlet - Handler execution resulted in exception - forwarding to resolved error view: ModelAndView: reference to view with name 'systemError'; model is {exception=com.ibm.wsspi.webcontainer.ClosedConnectionException: OutputStream encountered error during write}
+com.ibm.wsspi.webcontainer.ClosedConnectionException: OutputStream encountered error during write
+	at com.ibm.ws.webcontainer.channel.WCCByteBufferOutputStream.write(WCCByteBufferOutputStream.java:188) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.srt.SRTOutputStream.write(SRTOutputStream.java:97) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.writeOut(BufferedServletOutputStream.java:590) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.write(BufferedServletOutputStream.java:374) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.util.FileCopyUtils.copy(FileCopyUtils.java:113) ~[spring-core-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.writeContent(ResourceHttpRequestHandler.java:240) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:141) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:49) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575) [javax.j2ee.servlet.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668) [javax.j2ee.servlet.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1233) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:782) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97) [com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) [com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) [com.ibm.ws.webcontainer.jar:?]
+	at org.apache.logging.log4j.core.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:66) [log4j-core-2.0-beta9.jar:2.0-beta9]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:967) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1107) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:949) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1817) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:200) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:463) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:530) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:316) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:88) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.ssl.channel.impl.SSLReadServiceContext$SSLReadCompletedCallback.complete(SSLReadServiceContext.java:1820) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:175) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892) [com.ibm.ws.runtime.jar:?]
+Caused by: java.io.IOException: Async IO operation failed (1), reason: RC: 104  Connection reset by peer
+	at com.ibm.io.async.AsyncLibrary$IOExceptionCache.<init>(AsyncLibrary.java:924) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncLibrary$IOExceptionCache.get(AsyncLibrary.java:937) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncLibrary.getIOException(AsyncLibrary.java:951) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AbstractAsyncChannel.multiIO(AbstractAsyncChannel.java:482) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncSocketChannelHelper.write(AsyncSocketChannelHelper.java:478) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncSocketChannelHelper.write(AsyncSocketChannelHelper.java:396) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.tcp.channel.impl.AioSocketIOChannel.writeAIO(AioSocketIOChannel.java:282) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.tcp.channel.impl.AioTCPWriteRequestContextImpl.processAsyncWriteRequest(AioTCPWriteRequestContextImpl.java:54) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.tcp.channel.impl.TCPWriteRequestContextImpl.writeInternal(TCPWriteRequestContextImpl.java:382) ~[?:CCX.CF [o1537.01]]
+	at com.ibm.ws.tcp.channel.impl.TCPWriteRequestContextImpl.write(TCPWriteRequestContextImpl.java:353) ~[?:CCX.CF [o1537.01]]
+	at com.ibm.ws.ssl.channel.impl.SSLWriteServiceContext.encryptAndWriteAsync(SSLWriteServiceContext.java:406) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.ssl.channel.impl.SSLWriteServiceContext.write(SSLWriteServiceContext.java:329) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.ssl.channel.impl.SSLWriteServiceContext.write(SSLWriteServiceContext.java:175) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.impl.HttpServiceContextImpl.asynchWrite(HttpServiceContextImpl.java:2513) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.impl.HttpServiceContextImpl.sendOutgoing(HttpServiceContextImpl.java:2299) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundServiceContextImpl.sendResponseBody(HttpInboundServiceContextImpl.java:901) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.writeBufferAsynch(WCChannelLink.java:517) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.writeBufferResponse(WCChannelLink.java:494) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.writeBuffer(WCChannelLink.java:438) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCCByteBufferOutputStream.flushWriteBuffer(WCCByteBufferOutputStream.java:719) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCCByteBufferOutputStream.write(WCCByteBufferOutputStream.java:225) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.srt.SRTOutputStream.write(SRTOutputStream.java:97) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.writeOut(BufferedServletOutputStream.java:590) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.flushBytes(BufferedServletOutputStream.java:433) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.flush(BufferedServletOutputStream.java:405) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.util.FileCopyUtils.copy(FileCopyUtils.java:116) ~[spring-core-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.writeContent(ResourceHttpRequestHandler.java:240) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:141) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:49) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575) ~[javax.j2ee.servlet.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668) ~[javax.j2ee.servlet.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1233) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:782) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.apache.logging.log4j.core.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:66) ~[log4j-core-2.0-beta9.jar:2.0-beta9]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:967) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1107) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:3980) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.webapp.WebGroup.handleRequest(WebGroup.java:304) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1016) ~[com.ibm.ws.webcontainer.jar:?]
+	... 15 more
+2017-11-22 10:27:01.503 [WebContainer : 5] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciCutDay/Init
+2017-11-22 10:27:01.648 [WebContainer : 5] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:01.649 [WebContainer : 5] DEBUG java.sql.Connection - {conn-100054} Connection
+2017-11-22 10:27:01.652 [WebContainer : 5] DEBUG java.sql.Connection - {conn-100054} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:01.659 [WebContainer : 5] DEBUG java.sql.PreparedStatement - {pstm-100055} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:01.662 [WebContainer : 5] DEBUG java.sql.PreparedStatement - {pstm-100055} Parameters: [tm01]
+2017-11-22 10:27:01.665 [WebContainer : 5] DEBUG java.sql.PreparedStatement - {pstm-100055} Types: [java.lang.String]
+2017-11-22 10:27:01.674 [WebContainer : 5] DEBUG java.sql.ResultSet - {rset-100056} ResultSet
+2017-11-22 10:27:01.675 [WebContainer : 5] DEBUG java.sql.ResultSet - {rset-100056} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:01.676 [WebContainer : 5] DEBUG java.sql.ResultSet - {rset-100056} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:01.697 [WebContainer : 5] INFO  com.synesoft.cci.common.cutday.CutDayController - 系统日切Init开始。。。
+2017-11-22 10:27:01.845 [WebContainer : 5] DEBUG java.sql.Connection - {conn-100057} Connection
+2017-11-22 10:27:01.847 [WebContainer : 5] DEBUG java.sql.Connection - {conn-100057} Preparing Statement:    select param_val from ump.SYS_PARAM where param_group = 'CUTDAY' and param_code = '002'  
+2017-11-22 10:27:01.851 [WebContainer : 5] DEBUG java.sql.PreparedStatement - {pstm-100058} Executing Statement:    select param_val from ump.SYS_PARAM where param_group = 'CUTDAY' and param_code = '002'  
+2017-11-22 10:27:01.854 [WebContainer : 5] DEBUG java.sql.PreparedStatement - {pstm-100058} Parameters: []
+2017-11-22 10:27:01.858 [WebContainer : 5] DEBUG java.sql.PreparedStatement - {pstm-100058} Types: []
+2017-11-22 10:27:01.872 [WebContainer : 5] DEBUG java.sql.ResultSet - {rset-100059} ResultSet
+2017-11-22 10:27:01.873 [WebContainer : 5] DEBUG java.sql.ResultSet - {rset-100059} Header: [PARAM_VAL]
+2017-11-22 10:27:01.874 [WebContainer : 5] DEBUG java.sql.ResultSet - {rset-100059} Result: [TRUE]
+2017-11-22 10:27:01.879 [WebContainer : 5] INFO  com.synesoft.cci.common.cutday.CutDayController - 系统日切Init结束。。。
+2017-11-22 10:27:07.062 [WebContainer : 4] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciMsgSendMng/ini
+2017-11-22 10:27:07.181 [WebContainer : 4] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:07.183 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100060} Connection
+2017-11-22 10:27:07.189 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100060} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:07.195 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100061} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:07.198 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100061} Parameters: [tm01]
+2017-11-22 10:27:07.201 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100061} Types: [java.lang.String]
+2017-11-22 10:27:07.205 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100062} ResultSet
+2017-11-22 10:27:07.208 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100062} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:07.211 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100062} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:07.216 [WebContainer : 4] INFO  com.synesoft.cci.business.function.controller.CciMsgSendMngController - CciMsgSendMng-ini-start
+2017-11-22 10:27:07.220 [WebContainer : 4] INFO  com.synesoft.cci.business.function.controller.CciMsgSendMngController - CciMsgSendMng-ini-end
+2017-11-22 10:27:07.237 [WebContainer : 4] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciMsgSendMng/search
+2017-11-22 10:27:07.358 [WebContainer : 4] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:07.360 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100063} Connection
+2017-11-22 10:27:07.367 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100063} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:07.373 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100064} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:07.377 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100064} Parameters: [tm01]
+2017-11-22 10:27:07.380 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100064} Types: [java.lang.String]
+2017-11-22 10:27:07.384 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100065} ResultSet
+2017-11-22 10:27:07.388 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100065} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:07.391 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100065} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:07.547 [WebContainer : 4] INFO  com.synesoft.cci.business.function.controller.CciMsgSendMngController - CciMsgSendMng-search-start
+2017-11-22 10:27:07.563 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100066} Connection
+2017-11-22 10:27:07.580 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100066} Preparing Statement:    select count(*)      from mbt.CCI_REPORT_DATA_STATISTICS b   where 1=1                                                            AND b.LOGIC_DELETE_FLAG NOT IN ('1')    
+2017-11-22 10:27:07.587 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100067} Executing Statement:    select count(*)      from mbt.CCI_REPORT_DATA_STATISTICS b   where 1=1                                                            AND b.LOGIC_DELETE_FLAG NOT IN ('1')    
+2017-11-22 10:27:07.590 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100067} Parameters: []
+2017-11-22 10:27:07.594 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100067} Types: []
+2017-11-22 10:27:07.647 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100068} ResultSet
+2017-11-22 10:27:07.650 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100068} Header: [COUNT(*)]
+2017-11-22 10:27:07.655 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100068} Result: [1]
+2017-11-22 10:27:07.670 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100069} Connection
+2017-11-22 10:27:07.679 [WebContainer : 4] DEBUG java.sql.Connection - {conn-100069} Preparing Statement:    select *      from mbt.CCI_REPORT_DATA_STATISTICS b   where 1=1                                                            AND b.LOGIC_DELETE_FLAG NOT IN ('1')     ORDER BY b.LAST_UPDATE_TIME DESC  
+2017-11-22 10:27:07.685 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100070} Executing Statement:    select *      from mbt.CCI_REPORT_DATA_STATISTICS b   where 1=1                                                            AND b.LOGIC_DELETE_FLAG NOT IN ('1')     ORDER BY b.LAST_UPDATE_TIME DESC  
+2017-11-22 10:27:07.689 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100070} Parameters: []
+2017-11-22 10:27:07.695 [WebContainer : 4] DEBUG java.sql.PreparedStatement - {pstm-100070} Types: []
+2017-11-22 10:27:07.716 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100071} ResultSet
+2017-11-22 10:27:07.718 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100071} Header: [SYS_CTL_ID, FILE_FIN_FLAG, LAST_TERM_NO, REPORT_FILE_NAME_BE, REPORT_FILE_NAME_AF, FEEDBACK_FILE_NAME, FILE_SEND_DATE, REPORT_BATCH_NO, REPORT_FILE_TYPE, REDO_TYPE, PROCESSING_STATE, REPORT_COUNT, FEEDBACK_COUNT, SUCCESS_COUNT, FAIL_COUNT, FEEDBACK_ANALYSIS_DATE, BRANCH_ID, BRANCH_NO, OPERATE_TIME, OPERATER, LAST_UPDATE_TIME, LAST_UPDATER, LOGIC_DELETE_FLAG]
+2017-11-22 10:27:07.721 [WebContainer : 4] DEBUG java.sql.ResultSet - {rset-100071} Result: [20171107057000000000000000000266, 1, 201711070000, 113930A240010171113121000100, 113930A240010171113121000100, null, 20171113, 0001, 12, 1, 2, 1, 0, 0, 0, null, null, null, 20171107092341, system, 20171107092341, system, 0]
+2017-11-22 10:27:07.737 [WebContainer : 4] INFO  com.synesoft.cci.business.function.controller.CciMsgSendMngController - CciMsgSendMng-search-end
+2017-11-22 10:27:15.521 [PoolingTask-Runner] INFO  cn.com.synesoft.jsynframe.batch - PollingServerBase.PoolingTask.run() start.....
+2017-11-22 10:27:15.605 [BatchMonitor-1] INFO  cn.com.synesoft.jsynframe.batch - BatchMonitor.pooling().runNormal()->heartbeat() refresh bat_machine end.
+2017-11-22 10:27:15.617 [PoolingTask-Runner] INFO  cn.com.synesoft.jsynframe.batch - PollingServerBase.PoolingTask.run() end.
+2017-11-22 10:27:18.359 [WebContainer : 9] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciQualityDataReport/qry
+2017-11-22 10:27:18.477 [WebContainer : 9] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:18.477 [WebContainer : 9] DEBUG java.sql.Connection - {conn-100072} Connection
+2017-11-22 10:27:18.480 [WebContainer : 9] DEBUG java.sql.Connection - {conn-100072} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:18.486 [WebContainer : 9] DEBUG java.sql.PreparedStatement - {pstm-100073} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:18.489 [WebContainer : 9] DEBUG java.sql.PreparedStatement - {pstm-100073} Parameters: [tm01]
+2017-11-22 10:27:18.491 [WebContainer : 9] DEBUG java.sql.PreparedStatement - {pstm-100073} Types: [java.lang.String]
+2017-11-22 10:27:18.496 [WebContainer : 9] DEBUG java.sql.ResultSet - {rset-100074} ResultSet
+2017-11-22 10:27:18.498 [WebContainer : 9] DEBUG java.sql.ResultSet - {rset-100074} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:18.499 [WebContainer : 9] DEBUG java.sql.ResultSet - {rset-100074} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:26.074 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciOrginfoFamilyMembers/qry
+2017-11-22 10:27:26.185 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:26.186 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100075} Connection
+2017-11-22 10:27:26.190 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100075} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:26.196 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100076} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:26.200 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100076} Parameters: [tm01]
+2017-11-22 10:27:26.204 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100076} Types: [java.lang.String]
+2017-11-22 10:27:26.208 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100077} ResultSet
+2017-11-22 10:27:26.211 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100077} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:26.213 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100077} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:26.231 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciOrginfoFamilyMembers/ini
+2017-11-22 10:27:26.345 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:26.348 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100078} Connection
+2017-11-22 10:27:26.353 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100078} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:26.359 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100079} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:26.363 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100079} Parameters: [tm01]
+2017-11-22 10:27:26.367 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100079} Types: [java.lang.String]
+2017-11-22 10:27:26.371 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100080} ResultSet
+2017-11-22 10:27:26.374 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100080} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:26.377 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100080} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:26.382 [WebContainer : 10] INFO  com.synesoft.cci.business.controller.CciBusiController - ini-start
+2017-11-22 10:27:26.387 [WebContainer : 10] INFO  com.synesoft.cci.business.controller.CciBusiController - ini-end
+2017-11-22 10:27:26.401 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciOrginfoFamilyMembers/search
+2017-11-22 10:27:26.513 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:26.514 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100081} Connection
+2017-11-22 10:27:26.519 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100081} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:26.525 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100082} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:26.529 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100082} Parameters: [tm01]
+2017-11-22 10:27:26.531 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100082} Types: [java.lang.String]
+2017-11-22 10:27:26.535 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100083} ResultSet
+2017-11-22 10:27:26.538 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100083} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:26.541 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100083} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:26.677 [WebContainer : 10] INFO  com.synesoft.cci.business.controller.CciBusiController - search-start
+2017-11-22 10:27:30.258 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciCashFlow2002/mng
+2017-11-22 10:27:30.356 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:30.357 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100084} Connection
+2017-11-22 10:27:30.359 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100084} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:30.366 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100085} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:30.369 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100085} Parameters: [tm01]
+2017-11-22 10:27:30.371 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100085} Types: [java.lang.String]
+2017-11-22 10:27:30.374 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100086} ResultSet
+2017-11-22 10:27:30.381 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100086} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:30.383 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100086} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:30.400 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciCashFlow2002/ini
+2017-11-22 10:27:30.511 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:30.512 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100087} Connection
+2017-11-22 10:27:30.516 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100087} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:30.523 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100088} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:30.527 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100088} Parameters: [tm01]
+2017-11-22 10:27:30.529 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100088} Types: [java.lang.String]
+2017-11-22 10:27:30.533 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100089} ResultSet
+2017-11-22 10:27:30.536 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100089} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:30.538 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100089} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:30.543 [WebContainer : 10] INFO  com.synesoft.cci.business.controller.CciBusiController - ini-start
+2017-11-22 10:27:30.548 [WebContainer : 10] INFO  com.synesoft.cci.business.controller.CciBusiController - ini-end
+2017-11-22 10:27:30.563 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciCashFlow2002/search
+2017-11-22 10:27:30.688 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:30.690 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100090} Connection
+2017-11-22 10:27:30.695 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100090} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:30.702 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100091} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:30.705 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100091} Parameters: [tm01]
+2017-11-22 10:27:30.708 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100091} Types: [java.lang.String]
+2017-11-22 10:27:30.713 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100092} ResultSet
+2017-11-22 10:27:30.716 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100092} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:30.719 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100092} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:31.394 [WebContainer : 10] INFO  com.synesoft.cci.business.controller.CciBusiController - search-start
+2017-11-22 10:27:31.580 [WebContainer : 7] ERROR org.springframework.web.servlet.DispatcherServlet - Handler execution resulted in exception - forwarding to resolved error view: ModelAndView: reference to view with name 'systemError'; model is {exception=com.ibm.wsspi.webcontainer.ClosedConnectionException: OutputStream encountered error during write}
+com.ibm.wsspi.webcontainer.ClosedConnectionException: OutputStream encountered error during write
+	at com.ibm.ws.webcontainer.channel.WCCByteBufferOutputStream.write(WCCByteBufferOutputStream.java:188) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.srt.SRTOutputStream.write(SRTOutputStream.java:97) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.writeOut(BufferedServletOutputStream.java:590) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.write(BufferedServletOutputStream.java:374) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.util.FileCopyUtils.copy(FileCopyUtils.java:113) ~[spring-core-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.writeContent(ResourceHttpRequestHandler.java:240) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:141) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:49) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575) [javax.j2ee.servlet.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668) [javax.j2ee.servlet.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1233) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:782) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97) [com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) [com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) [com.ibm.ws.webcontainer.jar:?]
+	at org.apache.logging.log4j.core.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:66) [log4j-core-2.0-beta9.jar:2.0-beta9]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:967) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1107) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:949) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1817) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:200) [com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:463) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:530) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:316) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:88) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.ssl.channel.impl.SSLReadServiceContext$SSLReadCompletedCallback.complete(SSLReadServiceContext.java:1820) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:175) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905) [com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892) [com.ibm.ws.runtime.jar:?]
+Caused by: java.io.IOException: Async IO operation failed (1), reason: RC: 104  Connection reset by peer
+	at com.ibm.io.async.AsyncLibrary$IOExceptionCache.<init>(AsyncLibrary.java:924) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncLibrary$IOExceptionCache.get(AsyncLibrary.java:937) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncLibrary.getIOException(AsyncLibrary.java:951) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AbstractAsyncChannel.multiIO(AbstractAsyncChannel.java:482) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncSocketChannelHelper.write(AsyncSocketChannelHelper.java:478) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.io.async.AsyncSocketChannelHelper.write(AsyncSocketChannelHelper.java:396) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.tcp.channel.impl.AioSocketIOChannel.writeAIO(AioSocketIOChannel.java:282) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.tcp.channel.impl.AioTCPWriteRequestContextImpl.processAsyncWriteRequest(AioTCPWriteRequestContextImpl.java:54) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.tcp.channel.impl.TCPWriteRequestContextImpl.writeInternal(TCPWriteRequestContextImpl.java:382) ~[?:CCX.CF [o1537.01]]
+	at com.ibm.ws.tcp.channel.impl.TCPWriteRequestContextImpl.write(TCPWriteRequestContextImpl.java:353) ~[?:CCX.CF [o1537.01]]
+	at com.ibm.ws.ssl.channel.impl.SSLWriteServiceContext.encryptAndWriteAsync(SSLWriteServiceContext.java:406) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.ssl.channel.impl.SSLWriteServiceContext.write(SSLWriteServiceContext.java:329) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.ssl.channel.impl.SSLWriteServiceContext.write(SSLWriteServiceContext.java:175) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.impl.HttpServiceContextImpl.asynchWrite(HttpServiceContextImpl.java:2513) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.impl.HttpServiceContextImpl.sendOutgoing(HttpServiceContextImpl.java:2299) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundServiceContextImpl.sendResponseBody(HttpInboundServiceContextImpl.java:901) ~[com.ibm.ws.runtime.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.writeBufferAsynch(WCChannelLink.java:517) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.writeBufferResponse(WCChannelLink.java:494) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.writeBuffer(WCChannelLink.java:438) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCCByteBufferOutputStream.flushWriteBuffer(WCCByteBufferOutputStream.java:719) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.channel.WCCByteBufferOutputStream.write(WCCByteBufferOutputStream.java:225) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.srt.SRTOutputStream.write(SRTOutputStream.java:97) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.writeOut(BufferedServletOutputStream.java:590) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.flushBytes(BufferedServletOutputStream.java:433) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.wsspi.webcontainer.util.BufferedServletOutputStream.flush(BufferedServletOutputStream.java:405) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.util.FileCopyUtils.copy(FileCopyUtils.java:116) ~[spring-core-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.writeContent(ResourceHttpRequestHandler.java:240) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:141) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:49) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852) [spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778) ~[spring-webmvc-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575) ~[javax.j2ee.servlet.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668) ~[javax.j2ee.servlet.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1233) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:782) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) ~[com.ibm.ws.webcontainer.jar:?]
+	at org.apache.logging.log4j.core.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:66) ~[log4j-core-2.0-beta9.jar:2.0-beta9]
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:967) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1107) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:3980) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.webapp.WebGroup.handleRequest(WebGroup.java:304) ~[com.ibm.ws.webcontainer.jar:?]
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1016) ~[com.ibm.ws.webcontainer.jar:?]
+	... 15 more
+2017-11-22 10:27:34.198 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciReportMng/ini
+2017-11-22 10:27:34.320 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:34.322 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100093} Connection
+2017-11-22 10:27:34.326 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100093} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:34.331 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100094} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:34.335 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100094} Parameters: [tm01]
+2017-11-22 10:27:34.337 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100094} Types: [java.lang.String]
+2017-11-22 10:27:34.341 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100095} ResultSet
+2017-11-22 10:27:34.344 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100095} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:34.347 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100095} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:34.353 [WebContainer : 10] INFO  com.synesoft.cci.business.function.controller.CciReportMngController - CciReportMng-ini-start
+2017-11-22 10:27:34.356 [WebContainer : 10] INFO  com.synesoft.cci.business.function.controller.CciReportMngController - CciReportMng-ini-end
+2017-11-22 10:27:34.373 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority start: /CciReportMng/search
+2017-11-22 10:27:34.500 [WebContainer : 10] INFO  com.synesoft.common.interceptor.AuthorityInterceptor - CCI Validate Authority end.
+2017-11-22 10:27:34.502 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100096} Connection
+2017-11-22 10:27:34.506 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100096} Preparing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:34.512 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100097} Executing Statement:      select USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS,PASSWORD_STATUS, AUTHAMT,       STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME,       IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME,       LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5     from ump.SYS_USER_INF     where trim(USERID) = ?   
+2017-11-22 10:27:34.515 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100097} Parameters: [tm01]
+2017-11-22 10:27:34.518 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100097} Types: [java.lang.String]
+2017-11-22 10:27:34.522 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100098} ResultSet
+2017-11-22 10:27:34.525 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100098} Header: [USERID, USERNAME, PASSWORD, CREATEORG, LOGINORG, USERSTATUS, STATUS, OPTSTATUS, PASSWORD_STATUS, AUTHAMT, STAFFID, STAFFNAME, DEPARTMENT, GENDER, MAIL, TELNO, FAILLOGINCNT, LASTLOGINTIME, LOGINTIME, IPADDRESS, LOGOUTUSER, LOGOUTTIME, PWDCHANGEUSER, PWDCHANGETIME, CREATER, CREATETIME, LASTOPERATOR, LASTOPTTIME, CHECKER, CHECKTIME, RSV1, RSV2, RSV3, RSV4, RSV5]
+2017-11-22 10:27:34.528 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100098} Result: [tm01, 系统管理员, F3CC07F2495A4873AB22064662777FC3, 000, 000, 01, 02, 02, COMMITTED, null, null, null, null, null, null, null, 0, 20171122102348, 20171122102508, 133.10.46.40, tm01, 20171122102502, tm01, 20171120181006, admindemo, 20140818103524, tm01, 20170906181053, tm02, 20170906181207, null, null, null, null, null]
+2017-11-22 10:27:34.538 [WebContainer : 10] INFO  com.synesoft.cci.business.function.controller.CciReportMngController - CciReportMng-search-start
+2017-11-22 10:27:34.543 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100099} Connection
+2017-11-22 10:27:34.549 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100099} Preparing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.553 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100100} Executing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.557 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100100} Parameters: [22, 11, 22, 11]
+2017-11-22 10:27:34.560 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100100} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:34.621 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100101} ResultSet
+2017-11-22 10:27:34.623 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100102} Connection
+2017-11-22 10:27:34.626 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100102} Preparing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.631 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100103} Executing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.635 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100103} Parameters: [22, 12, 22, 12]
+2017-11-22 10:27:34.639 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100103} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:34.644 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100104} ResultSet
+2017-11-22 10:27:34.649 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100105} Connection
+2017-11-22 10:27:34.654 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100105} Preparing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.658 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100106} Executing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.663 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100106} Parameters: [22, 14, 22, 14]
+2017-11-22 10:27:34.666 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100106} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:34.670 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100107} ResultSet
+2017-11-22 10:27:34.676 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100108} Connection
+2017-11-22 10:27:34.683 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100108} Preparing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.695 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100109} Executing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.700 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100109} Parameters: [22, 31]
+2017-11-22 10:27:34.705 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100109} Types: [java.lang.String, java.lang.String]
+2017-11-22 10:27:34.715 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100110} ResultSet
+2017-11-22 10:27:34.719 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100111} Connection
+2017-11-22 10:27:34.726 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100111} Preparing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.732 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100112} Executing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.738 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100112} Parameters: [22, 51, 22, 51]
+2017-11-22 10:27:34.742 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100112} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:34.746 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100113} ResultSet
+2017-11-22 10:27:34.750 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100114} Connection
+2017-11-22 10:27:34.754 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100114} Preparing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.759 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100115} Executing Statement:    select ctl_busi_date MINBUSIDATE, count(1) COUNT     from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE = ? and report_file_type = ?                       AND CTL_BUSI_DATE = (      select MIN(ctl_busi_date)      from mbt.CCI_REPORT_SYSTEM_CTL               where OPERATING_STATE = ? and report_file_type = ?      AND msg_record_type not in('40','41','42','43','44','45','46')      AND REPORT_FLAG IN ('0','1')      AND FEEDBACK_FLAG = '0'      AND LOGIC_DELETE_FLAG != '1'     )                          AND msg_record_type not in('40','41','42','43','44','45','46')       AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by ctl_busi_date  
+2017-11-22 10:27:34.762 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100115} Parameters: [22, 32, 22, 32]
+2017-11-22 10:27:34.765 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100115} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:34.771 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100116} ResultSet
+2017-11-22 10:27:34.775 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100117} Connection
+2017-11-22 10:27:34.778 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100117} Preparing Statement:    select report_file_type FILETYPE,count(1) COUNT from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE ='31'    AND msg_record_type not in('40','41','42','43','44','45','46')    AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by report_file_type  
+2017-11-22 10:27:34.782 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100118} Executing Statement:    select report_file_type FILETYPE,count(1) COUNT from mbt.CCI_REPORT_SYSTEM_CTL    where OPERATING_STATE ='31'    AND msg_record_type not in('40','41','42','43','44','45','46')    AND REPORT_FLAG IN ('0','1')    AND FEEDBACK_FLAG = '0'    AND LOGIC_DELETE_FLAG != '1'    group by report_file_type  
+2017-11-22 10:27:34.785 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100118} Parameters: []
+2017-11-22 10:27:34.789 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100118} Types: []
+2017-11-22 10:27:34.796 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100119} ResultSet
+2017-11-22 10:27:34.797 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100120} Connection
+2017-11-22 10:27:34.802 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100120} Preparing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:34.806 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100121} Executing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:34.809 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100121} Parameters: [20171122, 11, 11, 20171122]
+2017-11-22 10:27:34.812 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100121} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:34.830 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100122} ResultSet
+2017-11-22 10:27:34.832 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100123} Connection
+2017-11-22 10:27:34.834 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100123} Preparing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:34.838 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100124} Executing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:34.841 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100124} Parameters: [11]
+2017-11-22 10:27:34.844 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100124} Types: [java.lang.String]
+2017-11-22 10:27:34.903 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100125} ResultSet
+2017-11-22 10:27:34.905 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100125} Header: [DATA_CHECK_STATE]
+2017-11-22 10:27:34.906 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100125} Result: [待校验]
+2017-11-22 10:27:34.911 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100126} Connection
+2017-11-22 10:27:34.916 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100126} Preparing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:34.920 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100127} Executing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:34.924 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100127} Parameters: [20171122, 12, 12, 20171122]
+2017-11-22 10:27:34.927 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100127} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:34.932 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100128} ResultSet
+2017-11-22 10:27:34.936 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100129} Connection
+2017-11-22 10:27:34.940 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100129} Preparing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:34.944 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100130} Executing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:34.947 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100130} Parameters: [12]
+2017-11-22 10:27:34.950 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100130} Types: [java.lang.String]
+2017-11-22 10:27:34.954 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100131} ResultSet
+2017-11-22 10:27:34.957 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100131} Header: [DATA_CHECK_STATE]
+2017-11-22 10:27:34.960 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100131} Result: [待校验]
+2017-11-22 10:27:34.964 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100132} Connection
+2017-11-22 10:27:34.969 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100132} Preparing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:34.974 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100133} Executing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:34.978 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100133} Parameters: [20171122, 14, 14, 20171122]
+2017-11-22 10:27:34.982 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100133} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:34.987 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100134} ResultSet
+2017-11-22 10:27:34.994 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100135} Connection
+2017-11-22 10:27:34.998 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100135} Preparing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:35.002 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100136} Executing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:35.006 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100136} Parameters: [14]
+2017-11-22 10:27:35.009 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100136} Types: [java.lang.String]
+2017-11-22 10:27:35.014 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100137} ResultSet
+2017-11-22 10:27:35.017 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100137} Header: [DATA_CHECK_STATE]
+2017-11-22 10:27:35.020 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100137} Result: [待校验]
+2017-11-22 10:27:35.025 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100138} Connection
+2017-11-22 10:27:35.034 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100138} Preparing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:35.038 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100139} Executing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:35.041 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100139} Parameters: [20171122, 31, 31, 20171122]
+2017-11-22 10:27:35.044 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100139} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:35.049 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100140} ResultSet
+2017-11-22 10:27:35.053 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100141} Connection
+2017-11-22 10:27:35.057 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100141} Preparing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:35.061 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100142} Executing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:35.064 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100142} Parameters: [31]
+2017-11-22 10:27:35.067 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100142} Types: [java.lang.String]
+2017-11-22 10:27:35.072 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100143} ResultSet
+2017-11-22 10:27:35.076 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100143} Header: [DATA_CHECK_STATE]
+2017-11-22 10:27:35.079 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100143} Result: [待校验]
+2017-11-22 10:27:35.084 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100144} Connection
+2017-11-22 10:27:35.088 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100144} Preparing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:35.092 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100145} Executing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and                REPORT_FILE_TYPE = ?             )   and                b.REPORT_FILE_TYPE = ?             and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:35.094 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100145} Parameters: [20171122, 51, 51, 20171122]
+2017-11-22 10:27:35.100 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100145} Types: [java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+2017-11-22 10:27:35.106 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100146} ResultSet
+2017-11-22 10:27:35.117 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100147} Connection
+2017-11-22 10:27:35.120 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100147} Preparing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:35.124 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100148} Executing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:35.128 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100148} Parameters: [51]
+2017-11-22 10:27:35.131 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100148} Types: [java.lang.String]
+2017-11-22 10:27:35.135 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100149} ResultSet
+2017-11-22 10:27:35.138 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100149} Header: [DATA_CHECK_STATE]
+2017-11-22 10:27:35.141 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100149} Result: [待校验]
+2017-11-22 10:27:35.146 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100150} Connection
+2017-11-22 10:27:35.153 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100150} Preparing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and            REPORT_FILE_TYPE in ('32','33')              )   and            b.REPORT_FILE_TYPE in ('32','33')              and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:35.157 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100151} Executing Statement:    select * from mbt.CCI_REPORT_DATA_STATISTICS   b   where b.report_batch_no=(   select max(report_batch_no) from   mbt.CCI_REPORT_DATA_STATISTICS   where FILE_SEND_DATE =   ?      and            REPORT_FILE_TYPE in ('32','33')              )   and            b.REPORT_FILE_TYPE in ('32','33')              and b.FILE_SEND_DATE = ?     
+2017-11-22 10:27:35.160 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100151} Parameters: [20171122, 20171122]
+2017-11-22 10:27:35.163 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100151} Types: [java.lang.String, java.lang.String]
+2017-11-22 10:27:35.174 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100152} ResultSet
+2017-11-22 10:27:35.176 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100153} Connection
+2017-11-22 10:27:35.178 [WebContainer : 10] DEBUG java.sql.Connection - {conn-100153} Preparing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:35.182 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100154} Executing Statement:    SELECT  data_check_state    FROM mbt.cci_data_check    WHERE report_file_type=?  
+2017-11-22 10:27:35.184 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100154} Parameters: [32]
+2017-11-22 10:27:35.187 [WebContainer : 10] DEBUG java.sql.PreparedStatement - {pstm-100154} Types: [java.lang.String]
+2017-11-22 10:27:35.195 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100155} ResultSet
+2017-11-22 10:27:35.198 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100155} Header: [DATA_CHECK_STATE]
+2017-11-22 10:27:35.201 [WebContainer : 10] DEBUG java.sql.ResultSet - {rset-100155} Result: [待校验]
+2017-11-22 10:27:35.206 [WebContainer : 10] INFO  com.synesoft.cci.business.function.controller.CciReportMngController - CciReportMng-search-end
