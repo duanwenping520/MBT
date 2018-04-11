@@ -1,0 +1,101 @@
+Sub summary()
+
+  Dim i As Integer
+    i = 3
+    ThisWorkbook.Worksheets(1).Columns(2).Clear
+    ThisWorkbook.Worksheets(1).Cells(2, 2).Value = "êy?Y?a±í??3?"
+
+    For Each sh In ThisWorkbook.Worksheets
+
+    If sh.Name <> "   " And InStr(sh.Name, "menu") = 0 Then
+
+    ThisWorkbook.Worksheets(1).Cells(i, 2).Value = sh.Name
+    ThisWorkbook.Worksheets(1).Cells(i, 2).Select
+    ActiveSheet.Hyperlinks.Add Anchor:=Selection, Address:="", SubAddress:= _
+    sh.Name + "!A1", TextToDisplay:=sh.Name
+    i = i + 1
+    End If
+    Next sh
+    
+    ThisWorkbook.Worksheets(1).Cells.Select
+   
+    With Selection.Font
+        .Name = "????"
+        .Size = 9
+        .Strikethrough = False
+        .Superscript = False
+        .Subscript = False
+        .OutlineFont = False
+        .Shadow = False
+        .TintAndShade = 0
+        .ThemeFont = xlThemeFontNone
+    End With
+End Sub
+
+Sub SQL()
+   Dim i As Integer
+    i = 1
+    Dim ADO_Stream As Object
+    Dim strSQL, strDelSQL As String
+    Dim strTblName As String
+    Dim col As Long
+    Dim row As Long
+    Dim str As String
+    Dim cnt As Integer
+    Dim rowcounts As Long
+    rowcounts = 0
+    Dim filecount As Long
+    filecount = 0
+    Set ADO_Stream = CreateObject("ADODB.Stream")
+    ADO_Stream.Type = 2
+    ADO_Stream.Mode = 3
+    ADO_Stream.Charset = "unicode"
+    ADO_Stream.Open
+   
+    Dim checkType As String
+        For Each sh In ThisWorkbook.Worksheets
+            cnt = 0
+            If sh.Name <> "   " And InStr(sh.Name, "menu") = 0 Then
+                rowcounts = 1
+                menuName = sh.Name
+                strTblName = ThisWorkbook.Worksheets(menuName).Cells(2, 3).Value
+               
+                'Insert SQL
+                row = 4
+               strSQL = "CREATE TABLE " + strTblName + " (" + vbCrLf
+                Do While sh.Cells(row, 3).Value <> ""
+                    If row <> 4 Then
+                     strSQL = strSQL + "," + vbCrLf
+                    End If
+                    
+                   strSQL = strSQL + sh.Cells(row, 3).Value + "  " + sh.Cells(row, 4).Value
+                   
+                  row = row + 1
+                  Loop
+                    strSQL = strSQL + ")" + vbCrLf
+                    
+                    strSQL = strSQL + "tablespace " + ThisWorkbook.Worksheets(menuName).Cells(1, 3).Value + vbCrLf + "pctfree 10" + vbCrLf + "initrans 1" + vbCrLf + " maxtrans 255 " + vbCrLf + " storage " + vbCrLf + "(" + vbCrLf + " initial 5 " + vbCrLf + " next 1 " + vbCrLf + "minextents 1 " + vbCrLf + " maxextents unlimited " + vbCrLf + ");" + vbCrLf
+                    
+                    
+                    comment_row = 4
+                  Do While comment_row <= row
+                     If sh.Cells(comment_row, 5) <> " " And sh.Cells(comment_row, 5) <> "" Then
+                    strSQL = strSQL + "comment on column " + menuName + "." + ThisWorkbook.Worksheets(menuName).Cells(comment_row, 3).Value + " is '" + ThisWorkbook.Worksheets(menuName).Cells(comment_row, 5) + "';" + vbCrLf
+                    End If
+                    comment_row = comment_row + 1
+                    Loop
+                    
+                    ADO_Stream.WriteText strSQL
+           End If
+            i = i + 1
+            rowcounts = 0
+            filecount = 0
+            
+        Next sh
+        ADO_Stream.SaveToFile ThisWorkbook.Path & "\create_table.sql", 2
+        ADO_Stream.Close
+        Set ADO_Stream = Nothing
+         MsgBox ("?¨±í??±?éú3é3é1|￡ocreate_table.sql")
+End Sub
+
+
